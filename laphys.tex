@@ -1,0 +1,40 @@
+% !TEX program = lualatexmk
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{book}
+\usepackage{graphicx} % for logo
+\usepackage[language=english]{lipsum}   % for dummy text
+
+\DeclareRobustCommand{\LaPhYs}
+  {%
+    \mbox{%
+    L%
+    %\kern-0.36em\raise0.8ex\hbox{\textsubscript{A}}%
+    %\kern-0.36em\raise0.8ex\hbox{\textsubscript{A}}%
+    \kern-0.36em\raisebox{0.8ex}{\textsubscript{A}}%
+    \kern-0.15em P%
+    %\kern-0.29em\lower1.0ex\hbox{H}%
+    %\kern-0.29em\lower0.4ex\hbox{\scalebox{0.9}{H}}%
+    \kern-0.29em\raisebox{-0.4ex}{\scalebox{0.9}{H}}%
+    \kern-0.26em Y%
+    %\kern-0.25em\raise2.0ex\rotatebox[origin=c]{-20}{\textsc{s}}%
+    %\kern-0.25em\raisebox{\depth}{\rotatebox[origin=c]{-20}{\textsc{s}}}%
+    %\kern-0.25em\raisebox{0ex}{\rotatebox[origin=c]{-28}{\textsc{s}}}%
+    \kern-0.25em\rotatebox[origin=c]{-28}{\textsc{s}}%
+    }%
+  }%
+
+\title{\LaPhYs: \LaTeX{} for Introductory Physics \\ (Working Draft)}
+\author{Paul J. Heafner}
+
+\begin{document}
+\frontmatter
+
+\maketitle
+\include{preface}
+
+\mainmatter
+\include{chapterone}
+\include{chaptertwo}
+
+\end{document}
